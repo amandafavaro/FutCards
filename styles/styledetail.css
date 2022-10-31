@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Oxygen', sans-serif;
+  justify-content: space-between;
+  text-align: left;
+  padding: 20px;
+  margin: auto;
+}
+
+.card-info {
+  
+  height: 60px;
+  background-color: #0D3600;
+  border-radius: 15px;
+  color: #82c46e;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.card-info > .left {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%;
+}
+
+.player-name {
+  font-size: 24px;
+}
+
+.nation, .club {
+  display: flex;
+  align-items: center;
+}
+
+.card-info > .right {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.card-info span img {
+  margin-right: 10px;
+}
+
+.details {
+  width: 40%;
+  background-color: #0D3600;
+  border-radius: 15px;
+  color: #82c46e;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 390px;
+}
+
+.details > .value {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 46px;
+  color: #ff9700;
+  margin-bottom: 30px;
+}
+
+.details > .value > img {
+  width: 30px;
+}
+
+.details > p > span {
+  float: right;
+}
+
+span.star {
+  color: #fdba43;
+  white-space: nowrap;
+}
+
+@media screen {
+  .container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    align-self: center;
+  }
+
+  .details {
+    width: 90%;
+    align-self: center;
+  }
+
+  .card-info {
+    margin: 0;
+  }
+
+  .card-info > .right {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    width: 90%;
+
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .card-info {
+    width: 100%;
+
+    margin-bottom: 50px;
+  }
+
+  .card-info > .right {
+    flex-direction: row;
+  }
+
+  .details {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 40%;
+  }
+}
